@@ -230,7 +230,7 @@ class EMP(pg.sprite.Sprite):
     設定：発動時に存在する敵機と爆弾を無効化する
     消費スコア：20
     """
-    def __init__(self, emys, bombs, screen):
+    def __init__(self, emys:pg.sprite.Group, bombs:pg.sprite.Group, screen:pg.Surface):
         super().__init__()
         # 画面全体に透明度のある黄色の矩形を0.05秒表示
         self.image = pg.Surface((WIDTH, HEIGHT))
